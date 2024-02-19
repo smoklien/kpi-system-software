@@ -1,4 +1,6 @@
-src/**.o
+### Assembler ###
 
-src/**.exe
-
+*.exe
+*.lst
+*.map
+*.obj

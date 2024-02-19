@@ -5,7 +5,7 @@ This repository contains the source code and documentation for various lab works
 ## Repository structure
 
 - `docs`: This folder contains documentation and reports for the lab works.
-- `lab-x`: Directories that represents separate laboratory works.
+- `src`: Source code and related files to the labs.
 - `.gitignore`: Files or folders to ignore.
 
 ## Getting started
@@ -13,13 +13,22 @@ This repository contains the source code and documentation for various lab works
 1. Clone the repository to your local machine
 
    ```bash
-   git clone https://github.com/smoklien/kpi-system-software.git
+   tasm test.asm /l /zi
    ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd kpi-system-software
+    tlink test.obj /v /n
     ```
     
 3. Explore the labs in the `lab-x` directories and corresponding reports in the `docs` folder.
+    ```bash
+    test.exe
+    ```
+
+4. Debug project:
+
+    ```bash
+    td test.exe
+    ```

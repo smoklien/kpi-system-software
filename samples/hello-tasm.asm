@@ -1,15 +1,12 @@
 ; a simple hello tasm sample
 
-STSEG SEGMENT USE16 STACK
-           DB 64 DUP ( "STACK" )
-STSEG ENDS
-
+.386
 DSEG SEGMENT USE16
-     MESG DB 'hello world', 11, '$'
+     MESG DB 'hello world', 10, '$'
 DSEG ENDS
 
 CSEG SEGMENT USE16
-          ASSUME CS:CSEG, DS:DSEG, SS:STSEG
+          ASSUME CS:CSEG, DS:DSEG
      BEG: MOV    AX, DSEG
           MOV    DS, AX
           MOV    CX, 3

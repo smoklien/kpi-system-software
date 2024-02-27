@@ -1,34 +1,41 @@
-# System Software Lab Works Repository
+# Lab 1: Turbo Assembler for DOS
 
-This repository contains the source code and documentation for various lab works related to system software
+This README provides an overview of Lab 1 and instructions for assembling, linking, running, and debugging your Turbo Assembler program for DOS.
 
-## Repository structure
+## Project structure:
 
-- `docs`: This folder contains documentation and reports for the lab works.
-- `src`: Source code and related files to the labs.
-- `.gitignore`: Files or folders to ignore.
+- `src`: This folder contains the source code (`*.asm`) and any associated files for your Lab 1 project.
 
-## Getting started
+## Building and Running the Program:
 
-1. Clone the repository to your local machine
+1. Assemble code:
 
    ```bash
-   tasm test.asm /l /zi
+   tasm main.asm /l /zi
    ```
 
-2. Navigate to the project directory:
+   - `/l` option: Generates a standard listing file.
+   - `/zi` option: Includes full debugging information in the object file.
+
+2. Link the object file:
 
     ```bash
-    tlink test.obj /v /n
+    tlink main.obj /v /n
     ```
+
+    - `/v` option: Includes full symbolic debug information in the executable file.
+    - `/n` option: Ignores default libraries, linking only the provided object file.
     
-3. Explore the labs in the `lab-x` directories and corresponding reports in the `docs` folder.
+3. Run the program:
+    
     ```bash
-    test.exe
+    main.exe
     ```
 
-4. Debug project:
+4. Debug the program (optional):
 
     ```bash
-    td test.exe
+    td main.exe
     ```
+
+    - This command launches Turbo Debugger for step-by-step debugging.

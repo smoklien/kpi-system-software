@@ -1,8 +1,12 @@
-### Assembler ###
+# Assembler Files
 
 *.exe
 *.lst
 *.map
 *.obj
 
+# Word Documents
 *.docx
+
+doc
+# Additional Ignore Patterns (if needed)

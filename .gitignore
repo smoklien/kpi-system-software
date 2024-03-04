@@ -8,4 +8,8 @@
 # Word Documents
 *.docx
 
+# Enviorement settings
+
+.vscode
+
 # Additional Ignore Patterns (if needed)

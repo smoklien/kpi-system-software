@@ -6,6 +6,9 @@
 *.obj
 
 # Documents
+
+# doc
+
 doc
 
 # Enviorement settings

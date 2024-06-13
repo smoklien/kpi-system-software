@@ -5,7 +5,14 @@
 *.map
 *.obj
 
-# Word Documents
-*.docx
+# Documents
+
+# doc
+
+doc
+
+# Enviorement settings
+
+.vscode
 
 # Additional Ignore Patterns (if needed)

@@ -1,16 +1,22 @@
 .386
+
 DATA SEGMENT USE16
-    MESG DB 'Hello word','$'
+    MESG DB 'Hello world','$'
 DATA ENDS
+
 CODE SEGMENT USE16
          ASSUME CS:CODE,DS:DATA
     BEG: 
-         MOV    AX,DATA
-         MOV    DS,AX
-         MOV    AH,9
+         MOV    AX,DATA            ; Load data segment address into AX
+         MOV    DS,AX              ; Set DS (data segment) register to AX
+
          MOV    DX, OFFSET MESG
-         INT    21H
-         MOV    AH,4CH
-         INT    21H                ;back to dos
+
+         MOV    AH, 9              ; Function 9 (print string) for INT 21h
+         INT    21h                ; Interrupt 21h (DOS services), execute function
+
+         MOV    AH, 4Ch            ; Function 4Ch (terminate program) for INT 21h
+         INT    21h                ; Terminate the program
 CODE ENDS
+
 END BEG

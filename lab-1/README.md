@@ -1,12 +1,14 @@
-# Lab 1: Turbo Assembler for DOS
+# Lab 1: Introduction to the 8086 and TASM
 
-This README provides an overview of Lab 1 and instructions for assembling, linking, running, and debugging your Turbo Assembler program for DOS.
+This `README.md` provides an overview of Lab 1 and instructions for assembling, linking, running, and debugging this Turbo Assembler code.
 
-## Project structure:
+## Overview
 
-- `src`: This folder contains the source code (`*.asm`) and any associated files for your Lab 1 project.
+This code was given to me by my professor. The goal was to understand the principes of Borland Turbo Assembler (*debugger, linker, assembler*) and structure of the Intel 8086 architecture (*registers, dump, stack*). Program created an array of numbers and then reverse its order 
 
-## Building and Running the Program:
+## Running the Program:
+
+**Warning**: If you use VSCode extension than all files in the emulator will be named `test`.
 
 1. Assemble code:
 

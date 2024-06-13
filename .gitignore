@@ -5,8 +5,8 @@
 *.map
 *.obj
 
-# Word Documents
-*.docx
+# Documents
+doc
 
 # Enviorement settings
 

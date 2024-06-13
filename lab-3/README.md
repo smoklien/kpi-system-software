@@ -1,10 +1,10 @@
-# Lab 2: Processors. User input/output
+# Lab 3: Multiple choice. Division. 
 
 This `README.md` provides an overview of Lab 2.
 
 ## Overview
 
-Main goal of this lab was to process the user input and use math operations to output a modificated number.
+Main goal of this lab was to process the user input and use different math operations to output the result and remainder from division.
 
 ## Running the Program:
 
